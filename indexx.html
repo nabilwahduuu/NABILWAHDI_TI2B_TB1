@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Nabil TI 2B</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    background: #0f172a;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background: #020617;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* PROFILE */
+.profile-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* MENU */
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    width: 85%;
+    margin: 8px auto;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background: #1e293b;
+    transition: 0.3s;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.menu a:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+.menu a.active {
+    background: #2563eb;
+}
+
+.menu a.active::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 20%;
+    width: 4px;
+    height: 60%;
+    background: #60a5fa;
+    border-radius: 5px;
+}
+
+/* EXTRA */
+.extra-box {
+    margin-top: auto;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* CONTENT */
+.main {
+    margin-left: 230px;
+    padding: 30px;
+    padding-bottom: 300px;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2563eb;
+}
+
+tr:nth-child(even) {
+    background: rgba(255,255,255,0.05);
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/* ANIMASI */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="profile-box">
+        <img src="FOTO/PRIBADI.JPEG">
+        <h3>Nabil Wahdi</h3>
+        <p>TI 2B</p>
+    </div>
+
+    <div class="menu">
+        <a href="#profil" class="active">Profil</a>
+        <a href="#personal">Personal</a>
+        <a href="#keluarga">Keluarga</a>
+        <a href="#teman">Teman</a>
+        <a href="#hobi">Hobi</a>
+    </div>
+
+    <div class="extra-box">
+        <h4>Status</h4>
+        <p>Mahasiswa Teknik Informatika</p>
+    </div>
+
+</div>
+
+<div class="main">
+
+<section id="profil" class="fade">
+    <h1>Profil Diri</h1>
+    <div class="card">
+        <img src="FOTO/PRIBADI.JPEG">
+        <p><b>Nama Lengkap:</b> Nabil Wahdi</p>
+        <p><b>Kampus:</b> Politeknik Negeri Jakarta</p>
+        <p><b>Jurusan:</b> Teknik Informatika dan Komputer</p>
+        <p><b>Prodi:</b> Teknik Informatika</p>
+        <p><b>Kelas:</b> TI 2B</p>
+    </div>
+</section>
+
+<section id="personal" class="fade">
+    <h1>Informasi Personal</h1>
+    <div class="card">
+        <table>
+            <tr><th>Data</th><th>Keterangan</th></tr>
+            <tr><td>Nama Lengkap</td><td>Nabil Wahdi</td></tr>
+            <tr><td>Nama Panggilan</td><td>NaWa</td></tr>
+            <tr><td>Tempat, Tanggal Lahir</td><td>Depok, 19 September 2006</td></tr>
+            <tr><td>Umur</td><td>19 Tahun</td></tr>
+            <tr><td>Email</td><td>NabilWahdiSocialMedia@gmail.com</td></tr>
+            <tr><td>Nomor HP</td><td>085137045519</td></tr>
+            <tr><td>Alamat</td><td>Jl. Kp. Grogol Sebrang No.22</td></tr>
+        </table>
+    </div>
+</section>
+
+<section id="keluarga" class="fade">
+    <h1>Keluarga</h1>
+    <div class="card">
+        <img src="FOTO/KELUARGA.JPEG">
+        <p><b>Ayah:</b>Syamsiah Anhar</p>
+        <p><b>Ibu:</b>Amiyah Putri</p>
+        <p><b>Anak-1:</b>Sela Almaf</p>
+		<p><b>Anak-2:</b>Nabil WAhdi</p>
+        <p>Keluarga saya selalu mendukung saya dalam pendidikan dan kehidupan sehari-hari.</p>
+    </div>
+</section>
+
+<section id="teman" class="fade">
+    <h1>Teman</h1>
+    <div class="card">
+        <img src="FOTO/TEMAN.JPEG">
+        <p>Pertemanan saya baik dan solid, terutama di lingkungan kampus.</p>
+		<p> </p>
+        <p>Kami sering belajar bersama, berdiskusi, dan saling membantu dalam mengerjakan tugas.</p>
+    </div>
+</section>
+
+<section id="hobi" class="fade">
+    <h1>Hobi</h1>
+    <div class="card">
+        <ul>
+            <li>Membaca</li>
+            <li>Bekerja</li>
+        </ul>
+		<p> </p>
+        <p>Saya memiliki hobi membaca buku novel yang kebanyakan fiktif atau hanya sekedar khayalan.</p>
+		<p> </p>
+        <p>Bekerja juga menjadi hobi saya, karena menurut saya pekerjaan yang nyaman itu susah di dapatkan makanya saya memanfaatkan jika saya mendapatkan perkerjaan itu.</p>
+    </div>
+</section>
+
+<div class="footer">
+    © 2026 Nabil Wahdi | TI 2B
+</div>
+
+</div>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".menu a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - 150 && pageYOffset < sectionTop + sectionHeight - 150) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
